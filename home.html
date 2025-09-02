@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Story Games</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            height: 100vh;
+            background: url('home-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 5px #000;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.5);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        h1 { font-size: 48px; margin-bottom: 20px; }
+        p { font-size: 20px; margin-bottom: 30px; }
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        a.login { background: #3498db; color: white; }
+        a.register { background: #e74c3c; color: white; }
+        a:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Welcome to Interactive Stories!</h1>
+        <p>Embark on adventures, escape rooms, and romantic choices. Play your story now!</p>
+        <p>Login to play. Register if you do not have your Id.</p>
+        <a class="login" href="login.php">Login</a>
+        <a class="register" href="register.php">Register</a>
+    </div>
+</body>
+</html>
