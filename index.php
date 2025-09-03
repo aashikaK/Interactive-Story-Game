@@ -95,6 +95,5 @@ $story_ids = $stmt->fetchAll(PDO::FETCH_COLUMN);
     </div>
     <?php endforeach; ?>
 </div>
-
 </body>
 </html>
