@@ -121,9 +121,18 @@ $bg=($story_id==1)?"ghost-house.jpg" :(($story_id==2)?"escape-room.jpg" : "lune-
              <?php else: ?>
             <p class="end-msg"> The End </p>
         <a class="choice-card" href="index.php" 
-           style="background-image: url('back-btn-bg.jpg');color:black; font-size:24px; display:inline-block; width:50%;text-align:center;">
-          Back to Stories 
-        </a>
+   style="background-image: url('back-btn-bg.jpg'); 
+          color:black; 
+          font-size:26px; 
+          font-weight:bold;
+          display:inline-block;
+          width:50%; 
+          height:76px; 
+          line-height:76px; 
+          text-align:center;">
+  Back to Stories 
+</a>
+
     <?php endif; ?>
     </div>
         </body>
