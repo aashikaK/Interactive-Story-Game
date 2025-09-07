@@ -24,7 +24,11 @@ $story_ids = $stmt->fetchAll(PDO::FETCH_COLUMN);
             color: white;
             min-height: 100vh;
         }
-        h1 { text-align:center; padding: 30px; font-size: 40px; text-shadow: 2px 2px 5px #000; }
+        h1 { text-align:center; 
+            padding: 30px; 
+            font-size: 40px; 
+            color:rgba(6, 70, 112, 0.91);
+            text-shadow: 2px 2px 5px #015157ff; }
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -95,5 +99,17 @@ $story_ids = $stmt->fetchAll(PDO::FETCH_COLUMN);
     </div>
     <?php endforeach; ?>
 </div>
+
+<form action="" method="post">
+        <button type="submit" name="logout" style="background-color:red; color:white; font-weight:bold; padding:10px;
+        font-size:20px; margin-left:690px;margin-top:50px;width:150px; border-radius:10px;">Logout</button>
+    </form>
+<?php
+if(isset($_POST['logout'])){
+    session_destroy();
+    header("Location:login.php");
+    exit;
+} ?>
+
 </body>
 </html>
